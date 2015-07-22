@@ -5,10 +5,89 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/application.js"></script>
-
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=lato-light">
   <link href="css/custom.css" rel="stylesheet">
 </head>
 <body>
+  <!-- header -->
+  <header>
+    <h1> Because I'm API!!!  <span><img alt="" class="happy" src="http://www.lyricsmode.com/i/bpictures/big/8983.jpg"></span></h1>
+    <audio id="myAudio" src="/assets/happy.mp3" preload="auto"></audio>
+  </header>
+
+  <!-- Nav Bar -->
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="get-tab"><a href="#">INDEX</a></li>
+    <li role="presentation" class="post-tab"><a href="#">CREATE</a></li>
+    <li role="presentation" class="put-tab"><a href="#">UPDATE</a></li>
+    <li role="presentation" class="delete-tab"><a href="#">DELETE</a></li>
+  </ul>
+
+  <!-- INDEX -->
+  <div class="get" style="display: block;">
+    <div class="ref_cle">
+      <button class="refresh-button btn btn-default">REFRESH LIST</button>
+      <button class="clear-button btn btn-default">CLEAR</button>
+    </div>
+  </div>
+
+  <!--Post -->
+  <div class="post" style="display: block;">
+     <div class="ref_cle">
+      <button class="refresh-button btn btn-default">REFRESH LIST</button>
+      <button class="clear-button btn btn-default">CLEAR</button>
+    </div>
+    <div class="post-input">
+      <input class="user-post" type="text" name="" value="" placeholder="Enter User">
+      <input class="title-post" type="text" name="" value="" placeholder="Enter Title">
+      <input class="text-post" type="text" name="" value="" placeholder="Enter Text">
+     <button class="submit-post btn btn-default" type="submit">Submit</button>
+    </div>
+  </div>
+
+  <!-- UPDATE -->
+  <div class="put" style="display: none;">
+     <div class="ref_cle">
+      <button class="refresh-button btn btn-default">REFRESH LIST</button>
+      <button class="clear-button btn btn-default">CLEAR</button>
+    </div>
+    <div class="put-input">
+       <input class="id-put" type="text" name="" value="" placeholder="ID you wish to change">
+      <input class="user-put" type="text" name="" value="" placeholder="Update User">
+      <input class="title-put" type="text" name="" value="" placeholder="Update Title">
+      <input class="text-put" type="text" name="" value="" placeholder="Update Text">
+      <button class="submit-put btn btn-default" type="submit">Submit</button>
+    </div>
+  </div> 
+
+  <!-- DELETE -->
+  <div class="delete" style="display: none;">
+    <div class="ref_cle">
+      <button class="refresh-button btn btn-default">REFRESH LIST</button>
+      <button class="clear-button btn btn-default">CLEAR</button>
+    </div>
+    <input class="id-delete" type="text" name="" value="" placeholder="Enter ID you wish to delete">
+    <button class="submit-delete btn btn-default" type="submit">Submit</button>
+    <br>
+  </div>
+
+  <!--Table-->
+  <div class="data">
+    <div class="table-wrapper">
+      <table class="table table-striped">
+        <thead>
+          <tr> 
+            <td class="col-lg-2">ID</td>
+            <td class="col-lg-2">USER</td>
+            <td class="col-lg-2">TITLE</td>
+            <td class="col-lg-2">TEXT</td>
+          </tr>
+        </thead> 
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </body>
 </html>

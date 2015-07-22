@@ -1,0 +1,37 @@
+
+
+.happy {
+  max-width: 7%;
+  max-height: 7%;
+}
+
+body {
+  text-align: center;
+  font-family: 'lato-light';
+}
+
+.nav {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.data {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+thead {
+  font-weight: bold;
+}
+
+.submit-delete, .submit-put, .submit-post {
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.refresh-button, .clear-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
